@@ -1,0 +1,45 @@
+h1,p,h2,h4,h6{
+text-align:center;
+}
+body{
+ background-color:#205A28;
+ font-family:sans-serif;
+ padding: 17px
+}
+h1, h2 ,p,h6{
+  font-family: Impact,serif;
+}
+.est{
+  font-style:italic;
+}
+h1{
+ font-size:40px; 
+}
+h2{
+ font-size:30px;
+}
+h6{
+ font-size:17px;
+}
+hr {
+  height: 2px;
+  background-color:brown;
+ border-color:brown;
+}
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width:500px;
+}
+ p,h6{
+  display: inline-block;
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size:10px;
+ }
+.bottom-line{
+  margin-top:25px;
+}
