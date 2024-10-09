@@ -2,7 +2,7 @@ h1,p,h2,h4,h6{
 text-align:center;
 }
 body{
- background-color:#205A28;
+ background-color:#2C2E39;
  font-family:sans-serif;
  padding: 17px
 }
@@ -28,7 +28,7 @@ hr {
 }
 .menu {
   width: 80%;
-  background-color: burlywood;
+  background-color: #D8125B;
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
@@ -42,4 +42,15 @@ hr {
  }
 .bottom-line{
   margin-top:25px;
+}
+/*p,h6*/
+footer {
+  font-size: 14px;
+}
+
+a{
+ color:#000000;
+}
+a:hover {
+  color: #FFFFFF;
 }
