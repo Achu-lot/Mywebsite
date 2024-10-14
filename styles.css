@@ -1,0 +1,84 @@
+/* General styles */
+h1, p, h2, h4, h6 {
+  text-align: center;
+}
+body {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/35d41654933123.596f84ed7b938.gif);
+  font-family: sans-serif;
+  padding: 17px;
+}
+h1, h2, p, h6 {
+  font-family: Impact, serif;
+}
+.est {
+  font-style: italic;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+h6 {
+  font-size: 17px;
+}
+hr {
+  height: 2px;
+  background-color: #FF921C;
+  border-color: #FF921C;
+}
+footer {
+  font-size: 14px;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #FFFFFF;
+}
+p, h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-align: center;
+}
+.menupc {
+  width: 80%;
+  background-color: #EF036C;
+  margin-left: auto;
+  margin-right: auto;
+ padding: 20px;
+}
+.menuphone {
+  width: 80%;
+  background-color: #EF036C;
+  margin-left: auto;
+  margin-right: auto;
+ padding: 20px;
+}
+ 
+
+/* Styles for small devices (phones) */
+@media (max-width: 767px) {
+  .menuphone {
+    visibility: visible;
+  }
+  .menupc {
+    visibility: hidden;
+  }
+}
+
+/* Styles for medium and large devices (tablets and desktops) */
+@media (min-width: 768px) {
+  .menuphone {
+    visibility: hidden;
+  }
+  .menupc {
+    visibility: visible;
+    padding: 40px;
+    p ,h6 {
+      font-size: 17px;
+      text-align: center;
+    }
+  }
+}
