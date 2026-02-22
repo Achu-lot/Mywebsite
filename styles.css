@@ -2,83 +2,86 @@
 h1, p, h2, h4, h6 {
   text-align: center;
 }
+
 body {
   background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/35d41654933123.596f84ed7b938.gif);
   font-family: sans-serif;
   padding: 17px;
 }
+
 h1, h2, p, h6 {
   font-family: Impact, serif;
 }
+
 .est {
   font-style: italic;
 }
+
 h1 {
   font-size: 40px;
 }
+
 h2 {
   font-size: 30px;
 }
-h6 {
-  font-size: 17px;
-}
-hr {
-  height: 2px;
-  background-color: #FF921C;
-  border-color: #FF921C;
-}
-footer {
-  font-size: 14px;
-}
-a {
-  color: #000000;
-}
-a:hover {
-  color: #FFFFFF;
-}
+
+/* Base styles for p and h6 */
 p, h6 {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 14px; /* Increased slightly for readability */
   text-align: center;
 }
-.menupc {
-  width: 80%;
-  background-color: #EF036C;
-  margin-left: auto;
-  margin-right: auto;
- padding: 20px;
+
+hr {
+  height: 2px;
+  background-color: #FF921C;
+  border: none; /* Cleaner look for the line */
 }
-.menuphone {
-  width: 80%;
-  background-color: #EF036C;
-  margin-left: auto;
-  margin-right: auto;
- padding: 20px;
+
+footer {
+  font-size: 14px;
 }
- 
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+}
+
+/* Container Styling */
+.menupc, .menuphone {
+  width: 85%;
+  background-color: #EF036C;
+  margin: 0 auto; /* Centers the div */
+  padding: 20px;
+  border-radius: 10px; /* Optional: adds nice rounded corners */
+}
+
+/* --- RESPONSIVE LOGIC --- */
 
 /* Styles for small devices (phones) */
 @media (max-width: 767px) {
-  .menuphone {
-    visibility: visible;
-  }
   .menupc {
-    visibility: hidden;
+    display: none; /* Completely removes PC version from mobile */
   }
 }
 
 /* Styles for medium and large devices (tablets and desktops) */
 @media (min-width: 768px) {
   .menuphone {
-    visibility: hidden;
+    display: none; /* Completely removes phone version from PC */
   }
+  
   .menupc {
-    visibility: visible;
     padding: 40px;
-    p ,h6 {
-      font-size: 17px;
-      text-align: center;
-    }
+  }
+
+  /* Fixed nested selector syntax */
+  .menupc p, .menupc h6 {
+    font-size: 17px;
   }
 }
